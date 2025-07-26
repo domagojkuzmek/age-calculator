@@ -1,6 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { colors } from "./colors";
 
-const typography = {
+export const typography = {
     fonts: {
         primary: '"Poppins", sans-serif'
     },
@@ -36,3 +37,23 @@ const typography = {
     }
 
 }
+
+// Typography style guide
+
+export const TextPreset6 = styled.p`
+    font-size: ${typography.fontSize["fs-12"]};
+    font-family: ${typography.fonts.primary};
+    font-weight: ${typography.fontWeight.bold};
+    line-height: ${typography.lineHeight.height150};
+    letter-spacing: ${typography.letterSpacing.plus};
+    color: ${colors.grey["grey-500"]}
+    `;
+    
+export const TextPreset4 = styled.input.attrs({ type: 'number' })`
+    font-size: ${typography.fontSize["fs-20"]};
+    font-family: ${typography.fonts.primary};
+    font-weight: ${typography.fontWeight.bold};
+    line-height: ${typography.lineHeight.height150};
+    letter-spacing: ${typography.letterSpacing.normal};
+    color: ${colors.grey["grey-500"]}
+`;
