@@ -11,7 +11,8 @@ export const typography = {
         "fs-14": '0.875rem',
         "fs-20": '1.25rem',
         "fs-32": '2rem',
-        "fs-56": '3.5rem'
+        "fs-56": '3.5rem',
+        "fs-104": '6.5rem'
     },
 
     fontWeight: {
@@ -40,6 +41,25 @@ export const typography = {
 
 // Typography style guide
 
+export const TextPreset1 = styled.p`
+    font-size: ${typography.fontSize["fs-104"]};
+    font-family: ${typography.fonts.primary};
+    font-weight: ${typography.fontWeight.extraBold};
+    line-height: ${typography.lineHeight.height110};
+    letter-spacing: ${typography.letterSpacing.minus};
+    font-style: ${typography.fontStyle.italic};
+    color: ${colors.black};
+`;
+
+export const TextPreset4 = styled.input.attrs({ type: 'number' })`
+    font-size: ${typography.fontSize["fs-20"]};
+    font-family: ${typography.fonts.primary};
+    font-weight: ${typography.fontWeight.bold};
+    line-height: ${typography.lineHeight.height150};
+    letter-spacing: ${typography.letterSpacing.normal};
+    color: ${colors.grey["grey-500"]}
+`;
+
 export const TextPreset6 = styled.p`
     font-size: ${typography.fontSize["fs-12"]};
     font-family: ${typography.fonts.primary};
@@ -49,11 +69,3 @@ export const TextPreset6 = styled.p`
     color: ${colors.grey["grey-500"]}
     `;
     
-export const TextPreset4 = styled.input.attrs({ type: 'number' })`
-    font-size: ${typography.fontSize["fs-20"]};
-    font-family: ${typography.fonts.primary};
-    font-weight: ${typography.fontWeight.bold};
-    line-height: ${typography.lineHeight.height150};
-    letter-spacing: ${typography.letterSpacing.normal};
-    color: ${colors.grey["grey-500"]}
-`;
