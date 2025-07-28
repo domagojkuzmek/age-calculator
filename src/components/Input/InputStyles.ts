@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
 import { typography } from "../../styles/typography";
+import { media } from "../../styles/media";
 
 export const InputStyles = styled.input.attrs({ type: 'number' })`
     width: 88px;
@@ -22,10 +23,10 @@ export const InputStyles = styled.input.attrs({ type: 'number' })`
         outline: none;
     }
 
-    @media screen and (min-width: 348px) {
+    @media screen and (${media.tablet}) {
         width: 170px;  
         height: 64px; 
     };
-    @media screen and (min-width: 1292px) {
+    @media screen and (${media.desktop}) {
         width: 160px;   
     };`;

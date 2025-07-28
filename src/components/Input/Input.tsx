@@ -1,4 +1,4 @@
-import currentYear from "../../currentYear";
+import currentYear from "../../utils/currentYear";
 import { TextPreset6 } from "../../styles/typography";
 import { InputStyles } from "./InputStyles";
 
